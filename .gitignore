@@ -11,7 +11,6 @@ custom-pocs/
 *.db.bak-*
 
 # ===== 内部文件 =====
-repo.csv
 docs/测试报告*.md
 # 本地密钥证书（nuclei 内部自签凭据）
 .gobas-keys/
