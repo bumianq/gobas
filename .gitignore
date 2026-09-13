@@ -1,0 +1,29 @@
+# ===== 版权与敏感数据（切勿提交到公开仓库）=====
+# 第三方克隆的 POC 模板仓库：多数无 LICENSE（默认保留所有权利），
+# 仅作本地使用，克隆后执行 gobas sync 自行拉取。
+clone-templates/
+# 自定义 POC 模板（含可利用漏洞代码，是否公开由作者决定）
+custom-pocs/
+# SQLite 数据库：含模板元数据 + 目标/扫描结果/流量等敏感资产
+*.db
+*.db-shm
+*.db-wal
+*.db.bak-*
+
+# ===== 内部文件 =====
+repo.csv
+docs/测试报告*.md
+# 本地密钥证书（nuclei 内部自签凭据）
+.gobas-keys/
+# 内部文档
+gobas.docx
+.trae/
+
+# ===== 构建产物（发布用 GitHub Release 附件）=====
+/dist/
+# 本机编译的二进制（正式产物见 dist/）
+/gobas
+
+# ===== 系统/编辑器 =====
+.DS_Store
+*.log
